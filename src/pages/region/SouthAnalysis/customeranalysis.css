@@ -1,0 +1,389 @@
+.page-wrapper>.container-fluid {
+    padding: 10px; 
+    min-height: calc(100vh - 180px);
+    
+}
+#infoDiv {
+        background-color: #242424;
+        color: white;
+        padding: 6px;
+        width: 250px;
+        display: flex;
+        flex: 1;
+        flex-direction: column
+}
+#odb-type{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#query-button{
+    background-color: #242424;
+    color: white;
+    display: flex;
+    flex: 2;
+    padding: 5px;
+    cursor: pointer;
+    justify-content: center
+}
+#cancel{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+#table{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#attribute1{
+    background-color:#383434;
+    display: flex;
+    flex: 1;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+
+    
+}
+
+#attribute2{
+    background-color:#383434;
+    display: flex;
+    flex: 1;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+
+}
+#attribute3{
+    background-color:#383434;
+    display: flex;
+    flex: 1;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+}
+#attribute4{
+    background-color:#383434;
+    display: flex;
+    flex: 1;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+}
+#attribute5{
+    background-color:#383434;
+    display: flex;
+    flex: 1;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+}
+
+
+
+
+#attribute1 td{
+    border: 1px solid #ddd;  
+    padding: 5px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#attribute2 td{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}
+#attribute3 td{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}
+#attribute4 td{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}
+#attribute5 td{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 160px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+#attribute1 th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px; 
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white;
+}
+
+#attribute2 th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white; 
+}
+
+#attribute3 th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white;
+}
+
+#attribute4 th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;  
+    color: white;
+}
+
+#attribute5 th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;  
+    color: white;
+}
+
+
+
+#attribute1 tr:nth-child(even){ 
+    background-color:#383434;
+}
+
+#attribute2 tr:nth-child(even){
+    background-color: #383434;
+}
+#attribute3 tr:nth-child(even){
+    background-color: #383434;
+}
+#attribute4 tr:nth-child(even){
+    background-color:#383434;
+}
+#attribute5 tr:nth-child(even){
+    background-color:#383434;
+}
+
+
+
+#attribute1 tr:hover {
+    background-color: #545454;
+}
+
+#attribute2 tr:hover {
+    background-color: #545454;
+}
+
+#attribute3 tr:hover {
+    background-color: #545454;
+}
+
+#attribute4 tr:hover {
+    background-color: #545454;
+}
+
+#attribute5 tr:hover {
+    background-color: #545454;
+}
+
+#infoDiv1{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+#infoDiv2{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+#infoDiv3{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+#infoDiv4{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+#infoDiv8{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+
+}
+
+#infoDiv5{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+#infoDiv7{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+#distance{
+    display: none;
+}
+#Town{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#buttons{
+        display: flex;
+        flex-direction: row,
+        
+}
+#query-DC{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex:1;
+        cursor: pointer;
+}
+#query-customer{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#unselect{
+    display: flex;
+    flex: 1;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+}
+
+#tableDC{
+    background-color: #242424;
+    color: white;
+    padding: 5px;
+    cursor: pointer; 
+}
+.fa,.fa-columns {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 11px;
+    margin-right: 10px
+}
+#myButtonControlID{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+
+#infoDivDate {
+        background-color: #242424;
+        color: white;
+        padding: 6px;
+        width: 240px;
+        display: flex;
+        flex: 1;
+        flex-direction: column
+}
+#TownDate{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#dates1, #dates2{
+   background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px 
+}
+#queryDate, #unselect1{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#resultsDate{
+    overflow: auto;
+    max-height: 50px;
+}
+#close{
+    display: flex;
+    flex: 1;
+    margin-left: 15px;
+    padding: 2px
+}
+i.far.fa-times-circle {
+    display: flex;
+    margin: 3px;
+}
+.relate {
+    margin-top: 2px;
+}
+

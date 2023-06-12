@@ -1,0 +1,126 @@
+.card-row.row {
+    padding-top: 3px;
+
+}
+.card-header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between; 
+    background-color: #0d0d0e;
+    color: aliceblue;
+    
+
+}
+.card-body {
+    background-color: #011424;  
+    color: aliceblue;
+    height: 18vh;  
+    max-height: 18vh;
+    text-align: center;
+    /* background:url(http://lorempixel.com/output/people-q-c-640-480-9.jpg) */
+}
+.cardbody{ 
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center; 
+    
+ }
+ .cardbody-key{
+    display:flex;
+    flex: 1;    
+}
+
+ .container-fluid{
+     background-color: rgb(19, 17, 17);
+     /* background-color: rgb(19, 17, 17); */       
+ }
+ 
+ .map.col {
+    display: flex;
+    flex: 2;
+    width: 100%;
+    
+    
+}
+
+ #res{
+     cursor: pointer;
+ }
+ #cor{
+     cursor: pointer;
+ }
+ #ret{
+     cursor: pointer;
+ }
+ #cir{
+     cursor: pointer;
+ }
+ #ebon{
+    cursor: pointer;
+}
+#optic{
+    cursor: pointer;
+}
+
+ #south{
+     cursor: pointer;
+ }
+ #north{
+     cursor: pointer;
+ }
+ #northres{
+     cursor: pointer;
+ }
+ #northcor{
+     cursor: pointer;
+ }
+ #northret{
+     cursor: pointer;
+ }
+ #karachi {
+    /* margin: 2px; */
+    font-size: 16px;
+    text-shadow: 1px gray;
+    text-shadow: 2px 2px #000000;
+    /* margin-bottom: -1px; */
+    color: lightgray;
+    border-bottom: 1px solid #5f6163;
+    padding-bottom: 3px;
+    /* padding-top: 2px; */
+    margin-bottom: 6px;
+    
+}
+#Lahore{
+     /* margin: 2px; */
+     font-size: 16px;
+     text-shadow: 1px gray;
+     text-shadow: 2px 2px #000000;
+     /* margin-bottom: -1px; */
+     color: lightgray;
+     border-bottom: 1px solid #5f6163;
+     padding-bottom: 3px;
+     /* padding-top: 2px; */
+     margin-bottom: 6px;
+     
+}
+#khi{
+    cursor: pointer;
+}
+
+.App{
+    height:70%;
+    width: 500px;
+    float:left;
+}
+
+#myDiv.fullscreen{
+    z-index: 9999; 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+ }
+
+#myDiv{background:#cc0000; width:500px; height:400px;}

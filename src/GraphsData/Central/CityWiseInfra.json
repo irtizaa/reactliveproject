@@ -1,0 +1,44 @@
+{
+    "type": "bar-horizontal",
+    "datasets": [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/CentralRegion/MapServer/6",  
+                        "name": "Metro",
+                        "query": {
+                            "orderByFields": "Number_of_SUM DESC",
+                            "groupByFieldsForStatistics": "Region",
+                            "outStatistics": [{
+                                "statisticType": "sum",
+                                "onStatisticField": "Calculated_Length_km",
+                                "outStatisticFieldName": "Number_of_SUM"
+                }]
+         },"Join":"Region"
+     },
+     {
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/CentralRegion/MapServer/7",  
+                        "name": "LH",
+                        "query": {
+                            "where": "HandHole_No='MPPL Infra'",
+                            "orderByFields": "Number_of_SUM DESC",
+                            "groupByFieldsForStatistics": "Regions",
+                            "outStatistics": [{
+                                "statisticType": "sum",
+                                "onStatisticField": "Calculated_Length_km",
+                                "outStatisticFieldName": "Number_of_SUM"
+                }]
+         },"Join":"Regions"
+     }
+    ],
+    "series": [
+        {
+            "category": { "field": "City", "label": "City" },
+            "value": { "field": "Number_of_SUM", "label": "INfra" },
+            "source": "Metro"
+        },
+        {
+            "category": { "field": "City", "label": "City" },
+            "value": { "field": "Number_of_SUM", "label": "LH" },
+            "source": "LH"
+        }
+      
+    ]
+}

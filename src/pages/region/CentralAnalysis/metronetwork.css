@@ -1,0 +1,240 @@
+/* #infoDiv{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 300px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+#distance{
+    display: none;
+} */
+#RingId{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+
+#MetroRingId
+{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+ #buttons{
+    display: flex;
+    flex-direction: row,
+              
+}
+
+#metro-fortyeight-Core{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex:1;
+    cursor: pointer;
+
+}
+#metro-ninghtysix-Core{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#metro-twentyfour-Core{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#metro-twelve-Core{
+     background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#metro-clear{
+    display: flex;
+    flex: 1;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+#fortyeight-Core{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex:1;
+    cursor: pointer;
+
+}
+#ninghtysix-Core{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#twentyfour-Core{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#twelve-Core{
+     background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#clear{
+    display: flex;
+    flex: 1;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+}
+
+/* .fa,.fa-columns {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 11px;
+    margin-right: 10px
+}
+ #attribute{
+    background-color: #242424;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+    width: 1600Px;
+    
+} 
+
+#attribute td, #atttribute tr{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 1600px;
+    text-align: center;
+    cursor: pointer;
+
+}
+#attribute thead, #attribute th{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white;
+
+   
+}
+#attribute tr:nth-child(even){background-color: #242424;}
+#attribute tr:hover {background-color: #545454;} 
+
+#infoDiv1{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 300px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+} */
+#Town1{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#dates1, #dates2{
+   background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px 
+}
+#query-button{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#unselect1{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#results1{
+    /* overflow: auto; */
+    max-height: 170px;
+}
+
+
+#fourwheel-attribute{
+    background-color: #242424;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+    width: 1600Px;
+    
+} 
+
+#fourwheel-attribute td, #atttribute tr{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 1600px;
+    text-align: center;
+    cursor: pointer;
+
+}
+#fourwheel-attribute thead, #fourwheel-attribute th{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white;
+
+   
+}
+#fourwheel-attribute tr:nth-child(even){background-color: #242424;}
+#fourwheel-attribute tr:hover {background-color: #545454;}
+
+#myButtonControlID{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+
+#latlon{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+}
+.lat{
+    margin: 5px
+}
+.lon{
+    margin: 5px
+}
+#latlonBtn{
+    margin: 10px;
+    background-color: #242424;
+    color:white
+}

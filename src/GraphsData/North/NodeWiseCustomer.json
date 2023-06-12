@@ -1,0 +1,24 @@
+{
+    "type": "area",
+    "datasets": [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/NorthRegion/MapServer/0",
+                        "name": "schools",
+                        "query": {
+                            "orderByFields": "Number_of_SUM DESC",
+                            "groupByFieldsForStatistics": "Node_Name",
+                            "outStatistics": [{
+                                "statisticType": "sum",
+                                "onStatisticField": "No_of_Links",
+                                "outStatisticFieldName": "Number_of_SUM"
+                }]
+         }
+     }],
+    "series": [
+        {
+            "category": { "field": "Node_Name", "label": "Node" },
+            "value": { "field": "Number_of_SUM", "label": "Customer" },
+            "source": "schools"
+        }
+      
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "bar",
+    "datasets": [
+        {
+            "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/6",   
+             "name": "schools",
+             "query": {
+                 "orderByFields": "Number_of_SUM DESC",
+                 "groupByFieldsForStatistics": "City",
+                 "outStatistics": [{
+                     "statisticType": "sum",
+                     "onStatisticField": "Calculated_Length",
+                     "outStatisticFieldName": "Number_of_SUM"
+                 }]
+             }, "join": "City"
+         } 
+      
+      
+    ],
+    "series": [
+        {
+            "category": { "field": "City", "label": "South LH" },
+            "group": true,
+            "value": {
+              "field": "Number_of_SUM",
+              "label": "LH_length_KM"
+            },
+            "source": "schools"
+          }
+    ]
+  }

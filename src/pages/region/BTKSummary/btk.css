@@ -1,0 +1,20 @@
+
+.BTKInfra{
+
+  /* border-radius: 1200px; */
+  background-color:#000000;
+  float:"left";
+  width:200px;
+  height: 60px;
+  padding:1;
+  /* margin-Left:29px;
+  border-color: rgb(255, 0, 43); */
+  
+  cursor: pointer; 
+}
+
+.row
+{
+height: 140%;
+margin-left: 1px;
+}

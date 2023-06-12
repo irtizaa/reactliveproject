@@ -1,0 +1,54 @@
+{
+  "type": "line",
+  "datasets": [  
+      {  
+          "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/5",    
+           "name": "schools",
+           "query": {
+              "where": "HandHole_No='MPPL Infra'",
+               "orderByFields": "Number_of_SUM DESC",
+               "groupByFieldsForStatistics": "City", 
+               "outStatistics": [{ 
+                   "statisticType": "sum",
+                   "onStatisticField": "Calculated_Length_km",
+                   "outStatisticFieldName": "Number_of_SUM" 
+               }]
+           }, "join": "City"
+       } ,
+       {
+          "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/6",     
+           "name": "metro",
+           "query": {
+             
+               "orderByFields": "Number_of_SUM DESC",  
+               "groupByFieldsForStatistics": "City",
+               "outStatistics": [{
+                   "statisticType": "sum",
+                   "onStatisticField": "Calculated_Length_km",
+                   "outStatisticFieldName": "Number_of_SUM"
+               }]
+           }, "join": "City"
+       }
+    
+  ],
+  "series": [
+      {
+          "category": { "field": "City", "label": "City" },
+          "group": true,
+          "value": {
+            "field": "Number_of_SUM",
+            "label": "LH length"
+          },
+          "source": "schools"
+        },
+        {
+          "category": { "field": "City", "label": "City" },
+          "group": true,
+          "value": {
+            "field": "Number_of_SUM",
+            "label": "Metro Length"
+          },
+          "source": "metro"
+        }
+  ]
+}

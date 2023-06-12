@@ -1,0 +1,52 @@
+{
+    "type": "bar",
+    "datasets": [
+      {
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/7",  
+        "name": "Number_of_SUM",
+        "query": {
+            "orderByFields": "Number_of_SUM DESC",  
+            "groupByFieldsForStatistics": "Core_No",
+            "outStatistics": [
+              {  
+                "statisticType": "sum",
+                "onStatisticField": "Calculated_Length",  
+                "outStatisticFieldName": "Number_of_SUM"  
+              }
+            ]  
+          }    
+          
+        }  , {
+            "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/6",
+            "name": "Telenor",
+            "query": {
+                
+                "orderByFields": "Number_of_SUM DESC",
+                "groupByFieldsForStatistics": "Core_No",
+                "outStatistics": [{
+                    "statisticType": "sum",
+                    "onStatisticField": "Calculated_Length",
+                    "outStatisticFieldName": "Number_of_SUM"
+                }]
+            },
+            "join": "Calculated_Length"
+        }
+      
+    ],
+    "series": [
+      {
+        "category": { "field": "Core_No", "label": "City" },
+        "group": true,
+        "value": {
+          "field": "Number_of_SUM",
+          "label": "LH length"
+        },
+        "source": "Number_of_SUM"
+      }, {
+        "category": { "field": "Core_No", "label": "City" },
+        "value": { "field": "Number_of_SUM", "label": "Metro_Length_km" },
+        "source": "Telenor"
+    }
+      
+    ]
+  }

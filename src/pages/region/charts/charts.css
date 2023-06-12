@@ -1,0 +1,126 @@
+#container, body, html {
+    width: 100%;
+    max-width: 100%;
+    height: 789px;
+    max-height: 789px;
+    background-color: #2f3044;
+}
+
+#head {
+    position: fixed;
+    background-color: #2a2b3c;
+    /*background-color: #282828;*/
+    padding: 8px;
+    width: 100%;
+    max-width: 100%;
+    float: right;
+    text-emphasis-position: left;
+    color: white;
+    /*text-align: left;*/
+    font-family: Helvetica;
+    /*margin-top: 1px;*/
+}
+
+.main1 {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #2f3044;
+    margin-top: 4.3%;
+    margin-left: 5%;
+    width: 31.5%;
+    max-width: 31.5%;
+    height: 365px;
+    max-height: 365px;
+    /*border: double;*/
+}
+
+.main2 {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #2f3044;
+    margin-top: 4.3%;
+    margin-left: 0%;
+    width: 31.5%;
+    max-width: 31.5%;
+    height: 365px;
+    max-height: 365px;
+    /*border: double;*/
+}
+
+.main3 {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #2f3044;
+    margin-top: 4.3%;
+    margin-left: 0%;
+    width: 31.5%;
+    max-width: 31.5%;
+    height: 365px;
+    max-height: 365px;
+    /*border: double;*/
+}
+
+.main4 {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #2f3044;
+    margin-top: 0%;
+    margin-left: 5%;
+    width: 31.5%;
+    max-width: 31.5%;
+    height: 351px;
+    max-height: 351px;
+    /*border: double;*/
+}
+
+.main5 {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #2f3044;
+    margin-left: 0%;
+    width: 31.5%;
+    max-width: 31.5%;
+    height: 351px;
+    max-height: 351px;
+    /*border: double;*/
+}
+
+.main6 {
+    float: left;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #2f3044;
+    margin-left: 0%;
+    width: 31.5%;
+    max-width: 31.5%;
+    height: 351px;
+    max-height: 351px;
+    /*border: double;*/
+}
+
+@@media only screen and (max-width:800px) {
+    /* For tablets: */
+    #container, .main1, .main2, main3, .main4, main5, main6 {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0;
+    }
+}
+
+@@media only screen and (max-width:1024px) {
+    #head {
+        max-width: 97%;
+        margin-left: 3%;
+    }
+
+    #container, .main1, .main2, main3, .main4, main5, main6 {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0;
+    }
+}

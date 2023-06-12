@@ -1,0 +1,19 @@
+.page-wrapper>.container-fluid {
+    /* padding: 20px; */
+    min-height: calc(100vh - 180px);
+    
+    padding: 0px 10px 0px 10px;
+
+    /* display: grid;   */
+    /* grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 50px 50px; */
+    
+}
+
+.map{
+
+    width: '100vw';
+    height: '100vh';
+    max-height: '100vh';
+    color: 'red'
+}

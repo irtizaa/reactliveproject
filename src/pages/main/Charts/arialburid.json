@@ -1,0 +1,43 @@
+{
+    "type": "area",
+    "datasets": [{
+        "url":"http://103.31.82.102:6080/arcgis/rest/services/Projects/CentralRegion/MapServer/7",  
+        "name": "schools",
+        "query": {
+          
+            "orderByFields": "Number_of_SUM DESC",
+            "groupByFieldsForStatistics": "Connectivity_Type",
+            "outStatistics": [{
+                "statisticType": "sum",
+                "onStatisticField": "Calculated_Length",
+                "outStatisticFieldName": "Number_of_SUM"
+            }]
+        },"join": "Connectivity_Type"
+    }, {
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/6",
+        "name": "Telenor",
+        "query": {
+           
+            "orderByFields": "Number_of_SUM DESC",
+            "groupByFieldsForStatistics": "Connectivity_Type",
+            "outStatistics": [{
+                "statisticType": "sum",
+                "onStatisticField": "Calculated_Length",
+                "outStatisticFieldName": "Number_of_SUM"
+            }]
+        },
+        "join": "Connectivity_Type"
+    }
+    ],
+    "series":  [
+        {
+            "category": { "field": "Connectivity_Type", "label": "Central LH Infra" },
+            "value": { "field": "Number_of_SUM", "label": "Buried Length" },
+            "source": "schools"
+        }, {
+                "category": { "field": "Connectivity_Type", "label": "South Metro Infra" },
+                "value": { "field": "Number_of_SUM", "label": "Aerial Length" },
+                "source": "Telenor"
+            }
+        ]
+}

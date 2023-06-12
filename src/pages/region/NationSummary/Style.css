@@ -1,0 +1,46 @@
+
+.Container{
+
+  border-radius: 12px;
+  background-color:#000000;
+  float:"left";
+  width:695px;
+  height: 50px;
+  padding:1;
+  margin-Left:29px;
+  margin-bottom:9px;
+  border-color: rgb(255, 0, 43);
+  cursor: pointer; 
+}
+.Aerial{
+  border-radius: 12px;
+  background-color:#000000;
+  float:"left";
+  width:430px;
+  height: 50px;
+  padding:1;
+  margin-Left:29px;
+  margin-bottom:9px;
+  border-color: rgb(255, 0, 43);
+  cursor: pointer; 
+}
+
+.Buried{
+  border-radius: 12px;
+  background-color:#000000;
+  float:"left";
+  width:390px;
+  height: 50px;
+  padding:1;
+  margin-Left:29px;
+  margin-bottom:9px;
+  border-color: rgb(255, 0, 43);
+  cursor: pointer; 
+}
+
+.row{
+
+ 
+  /* background-color:#44259b; */
+ 
+}

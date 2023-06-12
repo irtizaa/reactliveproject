@@ -1,0 +1,45 @@
+.container-fluid.content {
+  padding: 10px; 
+}
+th{
+font-size: 14px
+}
+td{
+  font-size: 12px
+}
+/* 
+.container-fluid.content{
+min-height: calc(180vh - 180px);
+} */
+
+
+#example{
+/* height: 100vh; */
+}
+
+/* title */
+.card-title{
+font-size: 16px;
+}
+
+.cards{
+min-height: calc(93.55vh);
+/* background-color: chartreuse; */
+}
+
+/* Table body */
+.table-responsive{
+/* color: bisque;  */
+/* height: 91vh; */
+height: 95vh;
+max-height: 95vh;
+
+}
+
+/* tabel Header */
+.card-body{   
+/* height: 60px; */
+/* background-color: cadetblue; */
+}
+
+

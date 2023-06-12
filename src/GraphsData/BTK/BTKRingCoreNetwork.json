@@ -1,0 +1,42 @@
+{
+    "type" : "bar-horizontal",
+    
+     "options": {
+       
+        "elements": {
+            "bar": {
+              "borderWidth": 2
+            }
+          },
+          "responsive": true,
+          "plugins": {
+            "legend": {
+              "position": "top"
+            },
+            "title": {
+              "display": true,
+              "text": "Chart.js Horizontal Bar Chart"
+            }
+          }
+      },
+    "datasets" : [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/CentralRegion/MapServer/6", 
+                        "name": "schools",
+                        "query": {
+                            "orderByFields": "Number_of_SUM DESC",
+                            "groupByFieldsForStatistics": "Ring_Name",
+                            "outStatistics": [{
+                                "statisticType": "sum",
+                                "onStatisticField": "Calculated_Length",
+                                "outStatisticFieldName": "Number_of_SUM"
+                            }]
+         }
+     }],
+     "series":[
+         {
+        "category": { "field": "Ring_Name", "label": "Ring Name" },
+        "value": { "field": "Number_of_SUM", "label": "Metro Infra" },
+        "source": "schools"
+    }
+    ]
+}

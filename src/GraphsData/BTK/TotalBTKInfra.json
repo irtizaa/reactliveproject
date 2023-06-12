@@ -1,0 +1,23 @@
+{
+    "type" : "line",
+    "datasets" : [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/BahriaTown/MapServer/7",  
+         "name": "schools",
+         "query": {
+             "orderByFields": "Number_of_SUM DESC",
+             "groupByFieldsForStatistics": "Town",
+             "outStatistics": [{
+                 "statisticType": "sum",
+                 "onStatisticField": "CalculatedLength",
+                 "outStatisticFieldName": "Number_of_SUM"
+             }]
+         }
+     }],
+     "series": [
+        {
+            "category": { "field": "Town", "label": "Town" },
+            "value": { "field": "Number_of_SUM", "label": "INfra" },
+            "source": "schools"
+        }
+    ]
+}

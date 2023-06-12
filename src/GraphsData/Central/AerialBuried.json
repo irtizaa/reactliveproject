@@ -1,0 +1,43 @@
+{
+    "type": "bar",
+    "datasets": [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/CentralRegion/MapServer/6",  
+                        "name": "schools",
+                        "query": {
+                            "orderByFields": "Number_of_SUM DESC",
+                            "groupByFieldsForStatistics": "Connectivity_Type",
+                            "outStatistics": [{
+                                "statisticType": "sum",
+                                "onStatisticField": "Calculated_Length_km",
+                                "outStatisticFieldName": "Number_of_SUM"
+                }]
+         },"join": "Connectivity_Type"
+     },
+    {
+     "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/CentralRegion/MapServer/7",  
+     "name": "LH",
+     "query": {
+         "orderByFields": "Number_of_SUM DESC",
+         "groupByFieldsForStatistics": "Connectivity_Type",
+         "outStatistics": [{
+             "statisticType": "sum",
+             "onStatisticField": "Calculated_Length_km",
+             "outStatisticFieldName": "Number_of_SUM"
+}]
+},"join": "Connectivity_Type"
+}
+],
+    "series": [
+        {
+            "category": { "field": "Connectivity_Type", "label": "Connectivity Type" },
+            "value": { "field": "Number_of_SUM", "label": "Metro INfra" },
+            "source": "schools"
+        },
+        {
+            "category": { "field": "Connectivity_Type", "label": "Connectivity Type" },
+            "value": { "field": "Number_of_SUM", "label": "LH INfra" },
+            "source": "LH"
+        }
+      
+    ]
+}

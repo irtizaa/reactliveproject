@@ -1,0 +1,42 @@
+{
+    "type" : "area",
+    "datasets" : [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/6",  
+        "name": "schools",
+        "query": {
+            "orderByFields": "Number_of_SUM DESC",
+            "groupByFieldsForStatistics": "Core_No",  
+            "outStatistics": [{  
+                "statisticType": "sum",
+                "onStatisticField": "Calculated_Length_km",
+                "outStatisticFieldName": "Number_of_SUM"
+            }]
+         }, "join": "Core_No"
+     },
+     {
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/5",  
+        "name": "LH",
+        "query": {
+            "orderByFields": "Number_of_SUM DESC",
+            "groupByFieldsForStatistics": "Core_No",  
+            "outStatistics": [{  
+                "statisticType": "sum",
+                "onStatisticField": "Calculated_Length_km",
+                "outStatisticFieldName": "Number_of_SUM"
+            }]
+         }, "join": "Core_No"
+     }
+     ],
+     "series": [
+        {
+            "category": { "field": "Core_No", "label": "Core No" },
+            "value": { "field": "Number_of_SUM", "label": "Metro Infra" },
+            "source": "schools"
+        },
+        {
+            "category": { "field": "Core_No", "label": "Core No" },
+            "value": { "field": "Number_of_SUM", "label": "LH Infra" },
+            "source": "LH"
+        }
+    ]
+}

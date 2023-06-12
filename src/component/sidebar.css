@@ -1,0 +1,24 @@
+.left-sidebar{
+  
+    overflow-y: auto;   
+    position: fixed;
+  
+    }
+    .left-sidebar a.active {
+      /* background-color: #1d1f27; */
+      /* background-color: #0b0b18; */
+      background-color: #171718;
+      
+    }
+    
+
+  /* .left-sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    display: block;    
+    overflow-x: hidden;
+    scroll-behavior: auto;
+     visibility: hidden;
+} */

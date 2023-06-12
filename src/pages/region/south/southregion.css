@@ -1,0 +1,8 @@
+#base-container {
+    height: 90.55vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-right: -10px
+}

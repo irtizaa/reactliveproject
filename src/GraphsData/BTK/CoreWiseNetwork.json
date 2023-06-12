@@ -1,0 +1,23 @@
+{
+    "type" : "pie",
+    "datasets" : [{
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/BahriaTown/MapServer/7",  
+        "name": "schools",
+        "query": {
+            "orderByFields": "Number_of_SUM DESC",
+            "groupByFieldsForStatistics": "Core_No",  
+            "outStatistics": [{  
+                "statisticType": "sum",
+                "onStatisticField": "CalculatedLength",
+                "outStatisticFieldName": "Number_of_SUM"
+            }]
+         }
+     }],
+     "series": [
+        {
+            "category": { "field": "Core_No", "label": "Core No" },
+            "value": { "field": "Number_of_SUM", "label": "Metro Infra" },
+            "source": "schools"
+        }
+    ]
+}

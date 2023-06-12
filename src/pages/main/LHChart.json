@@ -1,0 +1,50 @@
+{
+    "type": "bar-horizontal",
+    "datasets": [
+      {
+        "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/7",  
+        "name": "LH",
+        "query": {
+            "orderByFields": "Number_of_SUM DESC",  
+            "groupByFieldsForStatistics": "Regions ",
+            "outStatistics": [
+              {  
+                "statisticType": "sum",
+                "onStatisticField": "Calculated_Length",  
+                "outStatisticFieldName": "Number_of_SUM"  
+              }
+            ]  
+          }    
+          
+        }  , {
+            "url": "http://103.31.82.102:6080/arcgis/rest/services/Projects/SouthRegion/MapServer/6",
+            "name": "Metro",
+            "query": {
+                
+                "orderByFields": "Number_of_SUM DESC",
+                "groupByFieldsForStatistics": "Regions",
+                "outStatistics": [{
+                    "statisticType": "sum",
+                    "onStatisticField": "Calculated_Length",
+                    "outStatisticFieldName": "Number_of_SUM"
+                }]
+            },
+            "join": "Calculated_Length"
+        }
+      
+    ],
+    "series": [
+      {
+        "category": { "field": "Regions", "label": "South LH" },
+        "group": true,
+        "value": {"field": "Number_of_SUM","label": "LH length"
+        },
+        "source": "LH"
+      }, {
+        "category": { "field": "Regions", "label": "South Metro" },
+        "value": { "field": "Number_of_SUM", "label": "Metro Length" },
+        "source": "Metro"
+    }
+      
+    ]
+  }

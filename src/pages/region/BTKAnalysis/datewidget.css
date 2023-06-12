@@ -1,0 +1,88 @@
+/* html,
+	body,
+	#map {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	}
+	#distance{
+    display: none;
+	}
+
+	#infoDiv1{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+} */
+#Select_Ring{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#dates1, #dates2{
+   background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px 
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row,
+              
+}
+
+#date-query-button{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#unselect1{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;  
+    cursor: pointer;
+}
+#results1{
+    /* overflow: auto; */  
+    max-height: 170px;
+}
+  
+#attribute{
+    background-color: #242424;
+    color: white;
+    overflow: auto;  
+    max-height: 350px;
+    width: 520Px;
+    
+} 
+
+#attribute td, #atttribute tr{
+    border: 1px solid #ddd;
+    padding: 5px;   
+    width: 1600px;
+    text-align: center;
+    cursor: pointer;
+
+}
+#attribute thead, #attribute th{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white;
+
+   
+}
+#attribute tr:nth-child(even){background-color: #242424;}
+#attribute tr:hover {background-color: #545454;} 

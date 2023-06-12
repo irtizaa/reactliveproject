@@ -1,0 +1,185 @@
+.page-wrapper>.container-fluid {
+    padding: 10px; 
+    min-height: calc(100vh - 180px);
+    
+}
+#infoDiv {
+        background-color: #242424;
+        color: white;
+        padding: 6px;
+        width: 250px;
+        display: flex;
+        flex: 1;
+        flex-direction: column
+}
+#odb-type{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#query-button{
+    background-color: #242424;
+    color: white;
+    display: flex;
+    flex: 2;
+    padding: 5px;
+    cursor: pointer;
+    justify-content: center
+}
+#cancel{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+#table{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#attribute{
+    background-color: #242424;
+    display: flex;
+    flex: 1;
+    color: white;
+    overflow: auto;
+    max-height: 180px;
+
+    
+}
+#attribute td, #atttribute tr{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+#attribute th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #242424;
+    color: white;
+}
+#attribute tr:nth-child(even){background-color: #242424;}
+
+#attribute tr:hover {background-color: #545454;}
+
+#infoDiv1{
+    background-color: #242424;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+#distance{
+    display: none;
+}
+#Town{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#buttons{
+        display: flex;
+        flex-direction: row,
+        
+}
+#query-DC{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex:1;
+        cursor: pointer;
+}
+#query-customer{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#unselect{
+    display: flex;
+    flex: 1;
+    background-color: #242424;
+    color: white;
+    cursor: pointer;
+}
+
+#tableDC{
+    background-color: #242424;
+    color: white;
+    padding: 5px;
+    cursor: pointer; 
+}
+.fa,.fa-columns {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 11px;
+    margin-right: 10px
+}
+#myButtonControlID{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+
+#infoDivDate {
+        background-color: #242424;
+        color: white;
+        padding: 6px;
+        width: 240px;
+        display: flex;
+        flex: 1;
+        flex-direction: column
+}
+#TownDate{
+    background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px
+}
+#dates1, #dates2{
+   background-color: #242424;
+    color: white;
+    flex: 1;
+    padding: 3px 
+}
+#queryDate, #unselect1{
+    background-color: #242424;
+    color: white;
+    padding: 2px;
+    flex: 1;
+    cursor: pointer;
+}
+#resultsDate{
+    overflow: auto;
+    max-height: 50px;
+}
+#close{
+    display: flex;
+    flex: 1;
+    margin-left: 15px;
+    padding: 2px
+}
+i.far.fa-times-circle {
+    display: flex;
+    margin: 3px;
+}
+.relate {
+    margin-top: 2px;
+}
+
